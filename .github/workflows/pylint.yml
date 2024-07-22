@@ -9,8 +9,6 @@ jobs:
       matrix:
         python-version: ["3.12"]
     steps:
-    - name: Cache
-      uses: actions/cache@v4.0.2
     - uses: actions/checkout@v4
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v3
